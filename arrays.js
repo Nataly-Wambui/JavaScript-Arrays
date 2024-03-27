@@ -18,17 +18,18 @@ console.log('Sorted', arr3.sort());
 
 //Question 4
 var arr = ["apple", "mango", "apple", "orange", "mango", "mango"];
-function removeDuplicates(arr){
-    let myStrings = [];
-    arr.forEach(element) ; {
-    if (!myStrings.includes(element)){
-    myStrings.push(element);
+let arrDuplicate = []
+let arrOriginal = []
+arr.forEach(fruit=>{
+    if(!arrOriginal.includes(fruit)){
+        arrOriginal.push(fruit)
     }
-    };
-    return myStrings;
+    else{
+        arrDuplicate.push(fruit)
     }
-    console.log(removeDuplicates(arr));
-
+})
+console.log({arrOriginal})
+console.log({arrDuplicate})
 
 //Question 5
 let arr5 = ["the", "way", "x", 4];
